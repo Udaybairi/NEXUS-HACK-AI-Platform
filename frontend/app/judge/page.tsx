@@ -7,7 +7,7 @@ import AnimatedCard from "@/components/AnimatedCard";
 
 interface Project {
   id: string;
-  team_id: str;
+  team_id: string;
   title: string;
   description: string;
   track: string;
@@ -65,7 +65,7 @@ export default function JudgePortalPage() {
         setInnovation(parsed.innovation || 25);
         setDesign(parsed.design || 16);
         setImpact(parsed.impact || 17);
-      } catch (e) {}
+      } catch (e) { }
     } else {
       setTechExecution(25);
       setInnovation(25);
@@ -119,8 +119,8 @@ export default function JudgePortalPage() {
     }
   };
 
-  const filteredProjects = selectedTrack === "ALL" 
-    ? projects 
+  const filteredProjects = selectedTrack === "ALL"
+    ? projects
     : projects.filter(p => p.track.toLowerCase().includes(selectedTrack.toLowerCase()));
 
   const currentTotal = techExecution + innovation + design + impact;
@@ -159,11 +159,10 @@ export default function JudgePortalPage() {
           <button
             key={tr}
             onClick={() => setSelectedTrack(tr)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-              selectedTrack === tr
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${selectedTrack === tr
                 ? "bg-indigo-600 text-white shadow-md"
                 : "bg-slate-900 border border-slate-800 text-slate-400 hover:text-white"
-            }`}
+              }`}
           >
             {tr === "ALL" ? "All Submissions" : tr}
           </button>
@@ -190,11 +189,10 @@ export default function JudgePortalPage() {
                 <div
                   key={proj.id}
                   onClick={() => selectProjectForScoring(proj)}
-                  className={`p-5 rounded-2xl cursor-pointer transition-all border ${
-                    isSelected
+                  className={`p-5 rounded-2xl cursor-pointer transition-all border ${isSelected
                       ? "bg-slate-900/90 border-indigo-500 shadow-xl ring-1 ring-indigo-500/50"
                       : "bg-slate-950/60 border-slate-800/80 hover:border-slate-700"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
