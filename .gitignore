@@ -71,3 +71,6 @@ Thumbs.db
 
 # ─── uv lock (keep for reproducibility, .venv excluded above) ─────────────────
 # uv.lock is kept intentionally
+
+.vercel
+.env*
