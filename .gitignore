@@ -1,0 +1,73 @@
+# Root .gitignore for Hackathon website-AI
+
+# ─── Secrets ──────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ─── Node / Frontend ──────────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+build/
+dist/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# ─── Databases (local dev only) ───────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── AI / Vector store ────────────────────────────────────────────────────────
+vectorstore/
+chroma_db/
+# NOTE: ai-service/data/rulebook.txt is NOT ignored — it is required at runtime
+
+# ─── IDEs & OS ────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Vercel ───────────────────────────────────────────────────────────────────
+.vercel
+
+# ─── uv lock (keep for reproducibility, .venv excluded above) ─────────────────
+# uv.lock is kept intentionally
