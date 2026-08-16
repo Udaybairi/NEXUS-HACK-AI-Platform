@@ -30,7 +30,7 @@ export default function FloatingAIChatWidget() {
     {
       id: "welcome",
       role: "assistant",
-      content: "Hey there! 👋 How can I assist you with CreatED Hackathon today?",
+      content: "Hey there! 👋 How can I assist you with Nexus Hack today?",
       sources: []
     }
   ]);

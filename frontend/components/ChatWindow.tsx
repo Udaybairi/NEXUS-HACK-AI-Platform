@@ -31,7 +31,7 @@ export default function ChatWindow() {
     {
       id: "welcome",
       role: "assistant",
-      content: "Hello! I'm your official CreatED Hackathon AI Assistant. I can instantly clear your doubts about rules, schedule, tracks, catering, hardware lab, or submission guidelines!",
+      content: "Hello! I'm your official Nexus Hack AI Assistant. I can instantly clear your doubts about rules, schedule, tracks, catering, hardware lab, or submission guidelines!",
       sources: []
     }
   ]);
@@ -188,7 +188,7 @@ export default function ChatWindow() {
                 24/7 Grounded RAG
               </span>
             </h3>
-            <p className="text-xs text-slate-400">Answers verified against official CreatED Hackathon knowledge base</p>
+            <p className="text-xs text-slate-400">Answers verified against official Nexus Hack knowledge base</p>
           </div>
         </div>
 
