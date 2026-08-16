@@ -70,7 +70,7 @@ export default function Home() {
   const faqList = [
     {
       q: "How does the AI Voice Assistant answer questions?",
-      a: "Our voice assistant indexes official CreatED hackathon rules, schedule, track details, and judging rubrics. It performs vector retrieval in real-time and speaks back grounded answers with source citations."
+      a: "Our voice assistant indexes official Nexus Hack rules, schedule, track details, and judging rubrics. It performs vector retrieval in real-time and speaks back grounded answers with source citations."
     },
     {
       q: "What hardware lab equipment is provided at Appleton Tower?",

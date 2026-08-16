@@ -138,7 +138,7 @@ export default function JudgePortalPage() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">Judge Demo & Rubric Evaluation</h1>
-          <p className="text-sm text-slate-400 mt-1">Review live submissions, score rubrics, and provide feedback for CreatED Hackathon 2026.</p>
+          <p className="text-sm text-slate-400 mt-1">Review live submissions, score rubrics, and provide feedback for Nexus Hack 2026.</p>
         </div>
 
         <button

@@ -18,13 +18,13 @@ export default function FAQsPage() {
 
   const faqs: FAQItem[] = [
     {
-      q: "What hardware equipment and tools are provided at CreatED Hack?",
+      q: "What hardware equipment and tools are provided at Nexus Hack?",
       a: "Our dedicated 24-hour Hardware Lab provides microcontrollers (Arduino Uno, Nano, ESP32, Raspberry Pi 4), sensor modules (ultrasonic, temperature, IMUs, camera modules), breadboards, soldering stations, wire strippers, 3D printers, and component kits completely free for all hackers.",
       category: "hardware",
     },
     {
-      q: "Who is eligible to participate in CreatED Hack?",
-      a: "CreatED Hack is open to undergraduate, postgraduate, and PhD students enrolled in any university across the UK and internationally. Recent graduates who finished within the last 12 months are also welcome.",
+      q: "Who is eligible to participate in Nexus Hack?",
+      a: "Nexus Hack is open to undergraduate, postgraduate, and PhD students enrolled in any university across the UK and internationally. Recent graduates who finished within the last 12 months are also welcome.",
       category: "general",
     },
     {
